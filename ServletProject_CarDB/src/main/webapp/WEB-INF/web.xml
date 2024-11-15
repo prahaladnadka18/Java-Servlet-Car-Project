@@ -1,0 +1,45 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<!--SERVLET TAGS -->
+	<servlet>
+		<servlet-name>ADD</servlet-name>
+		<servlet-class>com.jsp.servlet.cardbproject.AddCarServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UPDATE</servlet-name>
+		<servlet-class>com.jsp.servlet.cardbproject.UpdateCarServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DELETE</servlet-name>
+		<servlet-class>com.jsp.servlet.cardbproject.DeletCarServlet</servlet-class>
+	</servlet>
+	<servlet>
+	<servlet-name>DISPLAY</servlet-name>
+	<servlet-class>com.jsp.servlet.cardbproject.DisplayCarServlet</servlet-class>
+	</servlet>
+
+
+	<!--SERVLET-MAPPING TAGS -->
+	<servlet-mapping>
+		<servlet-name>ADD</servlet-name>
+		<url-pattern>/adddetails</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UPDATE</servlet-name>
+		<url-pattern>/updatedetails</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DELETE</servlet-name>
+		<url-pattern>/deletedetails</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	<servlet-name>DISPLAY</servlet-name>
+	<url-pattern>/displaydetails</url-pattern>
+	</servlet-mapping>
+
+</web-app>
